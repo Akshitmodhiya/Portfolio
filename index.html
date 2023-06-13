@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!---------------- AOS Library ---------------->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!---------------- Own CSS ---------------->
+  <link rel="stylesheet" href="css/style.css">
+  <!---------------- Font Awesome Link ---------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Akshit Modhiya | Portfolio</title>
+</head>
+
+<body>
+  <!---------------- Header Section ---------------->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <img src="img/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text" data-aos="zoom-in">
+        <p>Front-end Developer</p>
+        <h1>Hi, I'm <span>Akshit</span> <br> Modhiya</h1>
+      </div>
+    </div>
+  </header>
+
+  <!---------------- About Section ---------------->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
+          <img src="img/user.png">
+        </div>
+        <div class="about-col-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm a qualified engineer dedicated, reliable, and eager to learn. Possess excellent time-keeping skills,
+            enthusiastic, and selfmotivated. I would like to be a part of an organization where I could use and enhance
+            my knowledge and skills for the development of both the organization and myself.</p>
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>HTML5 & CSS3</span><br>To Create dynamic and interactive Web Pages.</li>
+              <li><span>Bootstrap</span><br>Framework used for developing responsive and mobile-first websites.</li>
+              <li><span>SASS</span><br>CSS preprocessor, which extends the functionality of CSS and allows for more
+                efficient and organized stylesheet development.</li>
+              <li><span>Jquery</span><br>Fast, Small, and Feature-rich JavaScript Library.</li>
+              <li><span>JavaScript</span><br>High-level, Interpreted Programming Language that is widely used for
+                Front-end Web Development.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Experience">
+            <ul>
+              <li><span>HTML5 & CSS3</span><br>I can develop many responsive websites using HTML5 & CSS3.</li>
+              <li><span>Bootstrap</span><br>Improved website load times and performance by optimizing images and using
+                Bootstrap's pre-built CSS classes.</li>
+              <li><span>Owl Carousel</span><br>Implemented custom UI components, such as carousels, modals, and forms,
+                to enhance the user experience and improve interactivity.</li>
+              <li><span>JavaScript</span><br>I can make form validation, To do list using JavaScript.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Education">
+            <ul>
+              <li><span>2022</span><br>Front-end Web Developer From Code Easy Academy. Certi Id - HTT1007AM134 <a
+                  href="https://hinditechtutorials.com/verify" target="_blank"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a> <br>
+                JavaScript By Brad Traversy From Udemy. <a href="https://ude.my/UC-c7712476-9e47-4dca-97ce-4f94a0b3eb60"
+                  target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+              <li><span>2017</span><br>Bachlor of Automobile Engineering from Gujarat Technological
+                University.</li>
+              <li><span>2013</span><br>Higher Studies from Gujarat Higher Secondary Education Board.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------- Service Section ---------------->
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">Services</h1>
+      <div class="services-list">
+        <div class="services-box" data-aos="fade-down">
+          <!-- <i class="fa-solid fa-code"></i> -->
+          <i class="fa-brands fa-html5"></i>
+          <h2>PSD to Website</h2>
+          <p>In my frontend development services, I specialize in converting PSD (Photoshop) designs into fully
+            functional websites. With expertise in HTML, CSS, and JavaScript, I offer efficient and pixel-perfect PSD to
+            website conversion services.</p>
+        </div>
+        <div class="services-box" data-aos="fade-up">
+          <!-- <i class="fa-solid fa-crop-simple"></i> -->
+          <i class="fa-brands fa-bootstrap"></i>
+          <h2>Bootstrap Website</h2>
+          <p>As a frontend developer specializing in Bootstrap website development, I offer expertise in creating
+            visually appealing, responsive, and feature-rich websites using the Bootstrap framework.</p>
+        </div>
+        <div class="services-box" data-aos="fade-down">
+          <!-- <i class="fa-brands fa-app-store"></i> -->
+          <i class="fa-brands fa-square-js"></i>
+          <h2>JavaScript</h2>
+          <p>As a frontend developer with expertise in JavaScript, I offer comprehensive JavaScript development services
+            to enhance the interactivity and functionality of websites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------- Portfolio Section ---------------->
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="work-list">
+        <div class="work" data-aos="zoom-in">
+          <img src="img/work-2.png">
+          <div class="layer">
+            <h3>E-Commerce Website</h3>
+            <p>I created this website layout using HTML5 and CSS3 Flexbox.</p>
+            <a href="https://e-commercebyakshit.netlify.app/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work" data-aos="zoom-in">
+          <img src="img/work-1.png">
+          <div class="layer">
+            <h3>College Website</h3>
+            <p>I created this multipage website using HTML5, CSS3 Flexbox, hover effect and animation.</p>
+            <a href="https://collegewebsitebyakshit.netlify.app/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work" data-aos="zoom-in">
+          <img src="img/work-3.png">
+          <div class="layer">
+            <h3>Foodie Website</h3>
+            <p>I created this foodie website layout using Bootstrap5.</p>
+            <a href="https://foodiebyakshit.netlify.app/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </section>
+
+  <!---------------- Contact Section ---------------->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i> akshitmodhiya@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 9737104838, +91 7016426107</p>
+          <div class="social-icons">
+            <a href="https://github.com/Akshitmodhiya" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/akshitmodhiya/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=919737104838&amp;text=Hi there!" target="_blank"><i
+                class="fa-brands fa-square-whatsapp"></i></a>
+            <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+            <a href="mailto:akshitmodhiya@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <a href="#" class="btn btn-2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="#" onsubmit="sendEmail(); reset(); return false;">
+            <input type="name" name="Name" id="name" placeholder="Your Name" required>
+            <input type="email" name="Email" id="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" id="phone" placeholder="Phone No." required>
+            <textarea name="Message" rows="6" id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-2" id="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------- Footer Section ---------------->
+  <footer class="copyright">
+    <p>Made By Akshit Modhiya</p>
+  </footer>
+  <button class="goToTop" onclick="scrollToTop()"><i class="fa fa-angle-up"></i></button>
+
+
+  <!---------------- JavaScript ---------------->
+  <script src="js/app.js"></script>
+
+  <!---------------- AOS Script ---------------->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        offset: 200,
+        duration: 1000,
+      }
+    );
+  </script>
+
+  <!---------------- Contact Me ---------------->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
